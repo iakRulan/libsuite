@@ -1,0 +1,8 @@
+{
+  "case_id": "example-libsuite",
+  "modes": ["organize", "classify", "search", "qa"],
+  "inputs": ["input"],
+  "categories": {"report": {"patterns": ["report", "a_"]}, "misc": {"extensions": [".txt"]}},
+  "questions": [{"id": "Q1", "question": "report version"}],
+  "query": "report"
+}
