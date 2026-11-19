@@ -22,6 +22,15 @@ Cover the library track with one pipeline: the same repaired index feeds search,
 | `qa` | answer each question from the index; `unanswered` when unsupported |
 | `annotate` | notes → target files; unresolved targets flagged |
 
+
+## Pipeline
+
+```bash
+python3 /skills/weekly-skill/scripts/libsuite.py --case /input/case.json --work /app/work
+```
+
+> **脚本路径**：本技能安装于 `/skills/weekly-skill/`，脚本绝对路径为 `/skills/weekly-skill/scripts/libsuite.py`（工作目录是 `/app/work`，不要用相对路径）。
+
 ## Rules that must hold
 1. **Dedup by content hash**, version chains by logical name + mtime + hash.
 2. **Every label has a reason**; `undecided` when nothing matches.
